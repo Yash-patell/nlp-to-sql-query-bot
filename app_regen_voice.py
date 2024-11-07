@@ -12,18 +12,12 @@ import speech_recognition as sr
 # Function to connect to MySQL
 def connect_to_database():
     return mysql.connector.connect(
-        host='localhost',
-        user='root',
-        password='yash@12345',
-        database='office'
+        host='host',
+        user='your-username',
+        password='your_password',
+        database='name_of_your_database'
     )
 
-# Function To Load Google Gemini Model and provide queries as response
-def get_gemini_response(question, prompt):
-    model = genai.GenerativeModel(model_name="gemini-1.5-flash")
-    response = model.generate_content([prompt[0], question])
-    cleaned_response = response.text.replace("```sql", "").replace("```", "").strip()
-    return cleaned_response
 
 # Load the main model
 def load_model(model_dir):
