@@ -18,12 +18,6 @@ def connect_to_database():
         database='office'
     )
 
-# Function To Load Google Gemini Model and provide queries as response
-def get_gemini_response(question, prompt):
-    model = genai.GenerativeModel(model_name="gemini-1.5-flash")
-    response = model.generate_content([prompt[0], question])
-    cleaned_response = response.text.replace("```sql", "").replace("```", "").strip()
-    return cleaned_response
 
 # Load the main model
 def load_model(model_dir):
