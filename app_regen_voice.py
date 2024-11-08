@@ -12,10 +12,10 @@ import speech_recognition as sr
 # Function to connect to MySQL
 def connect_to_database():
     return mysql.connector.connect(
-        host='localhost',
-        user='root',
-        password='yash@12345',
-        database='office'
+        host='host',
+        user='your-username',
+        password='your_password',
+        database='name_of_your_database'
     )
 
 
