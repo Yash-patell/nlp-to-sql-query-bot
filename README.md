@@ -70,7 +70,7 @@ Classify the type of SQL query (e.g., ORDER, SELECT, JOIN) Generate a temporary 
 
 - Link - https://drive.google.com/drive/folders/1XTAOWuPM0Q58GXhZENsw2clNePydEA7D?usp=drive_link
 
-- just download the folder and put it in the project folder, np need to rename, everything would work.
+- just download the folder and put it in the project folder, no need to rename, everything would work out of the box.
 - and ofcouse you have the choice to train your own model according to your need/choice.
 
 
