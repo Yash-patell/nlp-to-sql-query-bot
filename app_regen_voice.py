@@ -112,7 +112,7 @@ def main():
         if st.button("Start Recording"):
             nlp_input_text = record_text()
             # st.write(f"Recognized Query Text: {nlp_input_text}")
-            model_dir_main = './LSTM_trained_pooling5_without_glove'
+            model_dir_main = './LSTM_trained_pooling5_without_glove_main-model'
             model_main, question_tokenizer_main, query_tokenizer_main, max_question_len_main, _ = load_model(model_dir_main)
         
             # Predict SQL query using the main model
